@@ -1,20 +1,24 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Firsadev\FilamentResourceRole;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Firsadev\FilamentResourceRole\Filament\Resources\Roles\RoleResource;
 
-class SkeletonPlugin implements Plugin
+class FilamentResourceRolePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-resource-role';
     }
 
     public function register(Panel $panel): void
     {
-        //
+      
+        $panel->resources([
+            RoleResource::class
+        ]);
     }
 
     public function boot(Panel $panel): void

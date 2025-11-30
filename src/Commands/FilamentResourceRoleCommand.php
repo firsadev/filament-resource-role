@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Firsadev\FilamentResourceRole\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentResourceRoleCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-resource-role';
 
     public $description = 'My command';
 
